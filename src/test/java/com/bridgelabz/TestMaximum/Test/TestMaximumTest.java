@@ -11,4 +11,9 @@ public class TestMaximumTest {
             Assert.assertEquals(100,testMaximum.findMaximum());
       }
 
+      @Test
+      public void givenSecondNumberAsGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum(20,100,30);
+            Assert.assertEquals(100,testMaximum.findMaximum());
+      }
 }
