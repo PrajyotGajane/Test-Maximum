@@ -1,6 +1,6 @@
 package com.bridgelabz.TestMaximum.service;
 
-public class TestMaximum <E extends Comparable<E>> {
+public class TestMaximum <E extends Comparable<E>>{
       E firstValue;
       E secondValue;
       E thirdValue;
@@ -22,5 +22,4 @@ public class TestMaximum <E extends Comparable<E>> {
             }
             return maximum;
       }
-
 }

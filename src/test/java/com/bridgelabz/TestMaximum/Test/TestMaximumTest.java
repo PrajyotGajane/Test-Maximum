@@ -54,5 +54,4 @@ public class TestMaximumTest {
             TestMaximum testMaximum = new TestMaximum("Apple","Banana","Peach");
             Assert.assertEquals("Peach",testMaximum.findMaximum());
       }
-
 }
