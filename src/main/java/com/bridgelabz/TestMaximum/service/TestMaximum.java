@@ -7,6 +7,9 @@ public class TestMaximum {
       Float firstFloat;
       Float secondFloat;
       Float thirdFloat;
+      String firstString;
+      String secondString;
+      String thirdString;
 
       /**
        * parameterised constructor to initialize the instance variables
@@ -35,6 +38,18 @@ public class TestMaximum {
       }
 
       /**
+       * parameterised constructor for string values initialization
+       * @param firstString
+       * @param secondString
+       * @param thirdString
+       */
+      public TestMaximum(String firstString, String secondString, String thirdString) {
+            this.firstString = firstString;
+            this.secondString = secondString;
+            this.thirdString = thirdString;
+      }
+
+      /**
        * to find the max integer out of given 3 integers
        * @return maximum
        */
@@ -57,5 +72,16 @@ public class TestMaximum {
                   maximum = thirdFloat;
             }
             return maximum;
+      }
+      public String findMaximumString(){
+            String maximum = firstString;
+            if ( secondString.compareTo(maximum) > 0.0f ){
+                  maximum = secondString;
+            }
+            if ( thirdString.compareTo(maximum) > 0.0f ){
+                  maximum = thirdString;
+            }
+            return maximum;
+
       }
 }

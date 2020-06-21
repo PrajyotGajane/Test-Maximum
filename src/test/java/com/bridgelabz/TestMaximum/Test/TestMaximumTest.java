@@ -36,4 +36,22 @@ public class TestMaximumTest {
             TestMaximum testMaximum = new TestMaximum(20.4f,30.5f,100.2f);
             Assert.assertEquals(100.2f,testMaximum.findMaximumFloat(),0.0f);
       }
+
+      @Test
+      public void givenFirstString_WhenGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum("Peach","Apple","Banana");
+            Assert.assertEquals("Peach",testMaximum.findMaximumString());
+      }
+
+      @Test
+      public void givenSecondString_WhenGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum("Apple","Peach","Banana");
+            Assert.assertEquals("Peach",testMaximum.findMaximumString());
+      }
+
+      @Test
+      public void givenThirdString_WhenGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum("Apple","Banana","Peach");
+            Assert.assertEquals("Peach",testMaximum.findMaximumString());
+      }
 }
