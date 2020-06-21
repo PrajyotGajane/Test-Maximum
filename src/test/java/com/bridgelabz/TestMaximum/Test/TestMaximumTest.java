@@ -24,4 +24,16 @@ public class TestMaximumTest {
             TestMaximum testMaximum = new TestMaximum(100.2f,20.4f,30.5f);
             Assert.assertEquals(100.2f,testMaximum.findMaximumFloat(),0.0f);
       }
+
+      @Test
+      public void givenSecondFloatNumberAsGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum(20.4f,100.2f,30.5f);
+            Assert.assertEquals(100.2f,testMaximum.findMaximumFloat(),0.0f);
+      }
+
+      @Test
+      public void givenThirdFloatNumberAsGreater_ShouldReturnTrue() {
+            TestMaximum testMaximum = new TestMaximum(20.4f,30.5f,100.2f);
+            Assert.assertEquals(100.2f,testMaximum.findMaximumFloat(),0.0f);
+      }
 }
