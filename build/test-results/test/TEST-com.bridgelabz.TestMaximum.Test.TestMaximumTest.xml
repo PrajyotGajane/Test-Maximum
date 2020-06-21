@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.TestMaximum.Test.TestMaximumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-06-20T22:10:02" hostname="HOME" time="0.01">
+<testsuite name="com.bridgelabz.TestMaximum.Test.TestMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-21T08:16:10" hostname="HOME" time="0.018">
   <properties/>
-  <testcase name="givenThirdNumberAsGreater_ShoulReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.008"/>
-  <testcase name="givenSecondNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
-  <testcase name="givenFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
+  <testcase name="givenFloatFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.018"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

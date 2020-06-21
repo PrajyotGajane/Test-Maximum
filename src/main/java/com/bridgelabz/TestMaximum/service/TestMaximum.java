@@ -4,6 +4,10 @@ public class TestMaximum {
       Integer firstInteger;
       Integer secondInteger;
       Integer thirdInteger;
+      Float firstFloat;
+      Float secondFloat;
+      Float thirdFloat;
+
       /**
        * parameterised constructor to initialize the instance variables
        * firstInteger,secondInteger and thirdInteger
@@ -16,6 +20,20 @@ public class TestMaximum {
       this.secondInteger = secondInteger;
       this.thirdInteger = thirdInteger;
       }
+
+      /**
+       * parameterised constructor to initialize the instance variables
+       * firstFloat,secondFloat and thirdFloat
+       * @param firstFloat
+       * @param secondFloat
+       * @param thirdFloat
+       */
+      public TestMaximum(Float firstFloat, Float secondFloat, Float thirdFloat) {
+            this.firstFloat = firstFloat;
+            this.secondFloat = secondFloat;
+            this.thirdFloat = thirdFloat;
+      }
+
       /**
        * to find the max integer out of given 3 integers
        * @return maximum
@@ -29,5 +47,15 @@ public class TestMaximum {
                 maximum = thirdInteger;
           }
           return maximum;
+      }
+      public float findMaximumFloat(){
+            Float maximum = firstFloat;
+            if ( secondFloat.compareTo(maximum) > 0.0f ){
+                  maximum = secondFloat;
+            }
+            if ( thirdFloat.compareTo(maximum) > 0.0f ){
+                  maximum = thirdFloat;
+            }
+            return maximum;
       }
 }
