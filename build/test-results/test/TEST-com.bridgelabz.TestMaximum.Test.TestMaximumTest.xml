@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.TestMaximum.Test.TestMaximumTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-06-21T09:42:11" hostname="HOME" time="0.048">
+<testsuite name="com.bridgelabz.TestMaximum.Test.TestMaximumTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-06-21T10:03:28" hostname="HOME" time="0.024">
   <properties/>
   <testcase name="givenSecondString_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.007"/>
   <testcase name="givenFirstString_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
   <testcase name="givenThirdFloatNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
-  <testcase name="givenSecondNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
-  <testcase name="givenThirdString_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.002"/>
+  <testcase name="givenMoreFloatValues_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
+  <testcase name="givenSecondNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
+  <testcase name="givenThirdString_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
   <testcase name="givenThirdNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
-  <testcase name="givenFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
+  <testcase name="givenFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
+  <testcase name="givenMoreIntegerValues_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
+  <testcase name="givenMoreStringValues_WhenGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
   <testcase name="givenSecondFloatNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
-  <testcase name="givenFloatFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.001"/>
+  <testcase name="givenFloatFirstNumberAsGreater_ShouldReturnTrue" classname="com.bridgelabz.TestMaximum.Test.TestMaximumTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
