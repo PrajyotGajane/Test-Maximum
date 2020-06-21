@@ -1,87 +1,26 @@
 package com.bridgelabz.TestMaximum.service;
 
-public class TestMaximum {
-      Integer firstInteger;
-      Integer secondInteger;
-      Integer thirdInteger;
-      Float firstFloat;
-      Float secondFloat;
-      Float thirdFloat;
-      String firstString;
-      String secondString;
-      String thirdString;
-
-      /**
-       * parameterised constructor to initialize the instance variables
-       * firstInteger,secondInteger and thirdInteger
-       * @param firstInteger
-       * @param secondInteger
-       * @param thirdInteger
-       */
-      public TestMaximum(Integer firstInteger, Integer secondInteger, Integer thirdInteger){
-      this.firstInteger = firstInteger;
-      this.secondInteger = secondInteger;
-      this.thirdInteger = thirdInteger;
+public class TestMaximum <E extends Comparable<E>> {
+      E firstValue;
+      E secondValue;
+      E thirdValue;
+      public TestMaximum(E firstValue, E secondValue, E thirdValue){
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
       }
-
-      /**
-       * parameterised constructor to initialize the instance variables
-       * firstFloat,secondFloat and thirdFloat
-       * @param firstFloat
-       * @param secondFloat
-       * @param thirdFloat
-       */
-      public TestMaximum(Float firstFloat, Float secondFloat, Float thirdFloat) {
-            this.firstFloat = firstFloat;
-            this.secondFloat = secondFloat;
-            this.thirdFloat = thirdFloat;
+      public E findMaximum(){
+            return TestMaximum.findMaximum(firstValue,secondValue,thirdValue);
       }
-
-      /**
-       * parameterised constructor for string values initialization
-       * @param firstString
-       * @param secondString
-       * @param thirdString
-       */
-      public TestMaximum(String firstString, String secondString, String thirdString) {
-            this.firstString = firstString;
-            this.secondString = secondString;
-            this.thirdString = thirdString;
-      }
-
-      /**
-       * to find the max integer out of given 3 integers
-       * @return maximum
-       */
-      public int findMaximum(){
-          Integer maximum = firstInteger;
-          if ( secondInteger.compareTo(maximum) > 0 ){
-                maximum = secondInteger;
-          }
-          if ( thirdInteger.compareTo(maximum) > 0){
-                maximum = thirdInteger;
-          }
-          return maximum;
-      }
-      public float findMaximumFloat(){
-            Float maximum = firstFloat;
-            if ( secondFloat.compareTo(maximum) > 0.0f ){
-                  maximum = secondFloat;
+      public static  < E extends Comparable > E findMaximum(E firstValue, E secondValue, E thirdValue){
+            E maximum = firstValue;
+            if ( secondValue.compareTo(maximum) > 0 ){
+                  maximum = secondValue;
             }
-            if ( thirdFloat.compareTo(maximum) > 0.0f ){
-                  maximum = thirdFloat;
+            if ( thirdValue.compareTo(maximum) > 0 ){
+                  maximum = thirdValue;
             }
             return maximum;
       }
-      public String findMaximumString(){
-            String maximum = firstString;
-            if ( secondString.compareTo(maximum) > 0.0f ){
-                  maximum = secondString;
-            }
-            if ( thirdString.compareTo(maximum) > 0.0f ){
-                  maximum = thirdString;
-            }
-            return maximum;
 
-      }
 }
